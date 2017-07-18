@@ -308,7 +308,6 @@ Custom property | Description | Default
       }
 
       _addListeners() {
-        console.log('_addListeners', this._target);
         if (this._target) {
           this._target.addEventListener('mouseenter', this._boundShow);
           this._target.addEventListener('focus', this._boundShow);
@@ -317,7 +316,6 @@ Custom property | Description | Default
           this._target.addEventListener('tap', this._boundHide);
         }
         this.addEventListener('mouseenter', this._boundHide);
-
       }
 
       _findTarget() {
