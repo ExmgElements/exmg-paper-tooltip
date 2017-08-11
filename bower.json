@@ -11,7 +11,7 @@
     "polymer",
     "tooltip"
   ],
-  "private": true,
+  "private": false,
   "homepage": "https://github.com/ExmgElements/exmg-paper-tooltip",
   "repository": {
     "type": "git",
