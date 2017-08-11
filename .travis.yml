@@ -1,8 +1,9 @@
 language: node_js
 node_js: stable
 sudo: required
-before_script:
+install:
 - npm install -g polymer-cli
+before_script:
 - polymer install
 addons:
   firefox: latest
