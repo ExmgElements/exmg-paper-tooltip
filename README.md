@@ -3,11 +3,9 @@ exmg-paper-tooltip [![Build Status](https://travis-ci.org/exmg/exmg-paper-toolti
 
 WARNING: This element is not compatible with Polymer 1.0
 
-<exmg-paper-tooltip> Is a simplified version of the paper-tooltip. The
+`<exmg-paper-tooltip>` Is a simplified version of the paper-tooltip. The
 animations have been stripped and replaced by a simply css animation + we
 have rewritten it to Polymer 2.0 syntax.
-
-Material design datatable. Please visit the [API Documentation and demo](http://exmg.github.io/exm-datatable/) page for more information.
 
 ## Install
 
