@@ -1,4 +1,4 @@
-exmg-paper-tooltip [![Build Status](https://travis-ci.org/exmg/exmg-paper-tooltip.svg?branch=master)](https://travis-ci.org/exmg/exmg-paper-tooltip)
+exmg-paper-tooltip [![Build Status](https://travis-ci.org/ExmgElements/exmg-paper-tooltip.svg?branch=master)](https://travis-ci.org/ExmgElements/exmg-paper-tooltip)
 ================
 
 WARNING: This element is not compatible with Polymer 1.0
