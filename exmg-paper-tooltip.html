@@ -2,7 +2,10 @@
 
 <!--
 
-`<exmg-tooltip>` is a label that appears on hover and focus when the user
+`<exmg-paper-tooltip>` Is a simplified version of the paper-tooltip. The
+animations have been stripped and replaced by a simply css animation + we
+have rewritten it to Polymer 2 syntax.
+This tooltip is a label that appears on hover and focus when the user
 hovers over an element with the cursor or with the keyboard. It will be centered
 to an anchor element specified in the `for` attribute, or, if that doesn't exist,
 centered to the parent node containing it. Note that this is a stripped version of
@@ -12,19 +15,19 @@ the fure this element can possibly be replaced by paper-tooltip.
 Example:
     <div style="display:inline-block">
       <button>Click me!</button>
-      <exmg-tooltip>Tooltip text</exmg-tooltip>
+      <exmg-paper-tooltip>Tooltip text</exmg-paper-tooltip>
     </div>
 
     <div>
       <button id="btn">Click me!</button>
-      <exmg-tooltip for="btn">Tooltip text</exmg-tooltip>
+      <exmg-paper-tooltip for="btn">Tooltip text</exmg-paper-tooltip>
     </div>
 
 The tooltip can be positioned on the top|bottom|left|right of the anchor using
 the `position` attribute. The default position is bottom.
 
-    <exmg-tooltip for="btn" position="left">Tooltip text</exmg-tooltip>
-    <exmg-tooltip for="btn" position="top">Tooltip text</exmg-tooltip>
+    <exmg-paper-tooltip for="btn" position="left">Tooltip text</exmg-paper-tooltip>
+    <exmg-paper-tooltip for="btn" position="top">Tooltip text</exmg-paper-tooltip>
 
 ### Styling
 
@@ -32,16 +35,17 @@ The following custom properties and mixins are available for styling:
 
 Custom property | Description | Default
 ----------------|-------------|----------
-`--exmg-tooltip-background` | The background color of the tooltip | `#616161`
-`--exmg-tooltip-opacity` | The opacity of the tooltip | `0.9`
-`--exmg-tooltip-text-color` | The text color of the tooltip | `white`
-`--exmg-tooltip` | Mixin applied to the tooltip | `{}`
+`--exmg-paper-tooltip-background` | The background color of the tooltip | `#616161`
+`--exmg-paper-tooltip-opacity` | The opacity of the tooltip | `0.9`
+`--exmg-paper-tooltip-text-color` | The text color of the tooltip | `white`
+`--exmg-paper-tooltip` | Mixin applied to the tooltip | `{}`
 
-@element exmg-tooltip
+@group Exmg Paper Elements
+@element exmg-paper-tooltip
 @demo demo/index.html
 -->
 
-<dom-module id="exmg-tooltip">
+<dom-module id="exmg-paper-tooltip">
   <template>
     <style>
       :host {
@@ -63,14 +67,14 @@ Custom property | Description | Default
         font-size: 10px;
         line-height: 1;
 
-        background-color: var(--exmg-tooltip-background, #616161);
-        opacity: var(--exmg-tooltip-opacity, 0.9);
-        color: var(--exmg-tooltip-text-color, white);
+        background-color: var(--exmg-paper-tooltip-background, #616161);
+        opacity: var(--exmg-paper-tooltip-opacity, 0.9);
+        color: var(--exmg-paper-tooltip-text-color, white);
 
         padding: 8px;
         border-radius: 2px;
 
-        @apply --exmg-tooltip;
+        @apply --exmg-paper-tooltip;
       }
 
       /* Thanks IE 10. */
@@ -85,7 +89,7 @@ Custom property | Description | Default
 
   <script>
     /**
-     * `exmg-tooltip`
+     * `exmg-paper-tooltip`
      *
      *
      * @customElement
@@ -93,7 +97,7 @@ Custom property | Description | Default
      * @demo demo/index.html
      */
     class ExmgTooltip extends Polymer.Element {
-      static get is() { return 'exmg-tooltip'; }
+      static get is() { return 'exmg-paper-tooltip'; }
       static get properties() {
         return {
           /**

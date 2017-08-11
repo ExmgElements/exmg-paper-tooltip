@@ -1,9 +1,20 @@
 {
-  "name": "exmg-tooltip",
-  "main": "exmg-tooltip.html",
+  "name": "exmg-paper-tooltip",
+  "main": "exmg-paper-tooltip.html",
+  "version": "1.0.0",
+  "authors": [
+    "Ex Machina Group"
+  ],
+  "keywords": [
+    "web-components",
+    "polymer",
+    "tooltip"
+  ],
+  "private": true,
+  "homepage": "https://github.com/ExmgElements/exmg-paper-tooltip",
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:exmachina/exmg-tooltip.git"
+    "url": "git@bitbucket.org:ExmgElements/exmg-paper-tooltip.git"
   },
   "dependencies": {
     "polymer": "Polymer/polymer#^2.0.0",

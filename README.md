@@ -1,21 +1,26 @@
-# \<exmg-tooltip\>
+exmg-paper-tooltip [![Build Status](https://travis-ci.org/exmg/exmg-paper-tooltip.svg?branch=master)](https://travis-ci.org/exmg/exmg-paper-tooltip)
+================
 
+WARNING: This element is not compatible with Polymer 1.0
 
+<exmg-paper-tooltip> Is a simplified version of the paper-tooltip. The
+animations have been stripped and replaced by a simply css animation + we
+have rewritten it to Polymer 2.0 syntax.
 
-## Install the Polymer-CLI
+Material design datatable. Please visit the [API Documentation and demo](http://exmg.github.io/exm-datatable/) page for more information.
 
-First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your element locally.
+## Install
 
-## Viewing Your Element
+Install the component using bower
+
+```
+$ bower install --save exmg-paper-tooltip
+```
+
+## Development
+
+First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run polymer server to launch the demo page.
 
 ```
 $ polymer serve
 ```
-
-## Running Tests
-
-```
-$ polymer test
-```
-
-Your application is already set up to be tested via [web-component-tester](https://github.com/Polymer/web-component-tester). Run `polymer test` to run your application's test suite locally.
