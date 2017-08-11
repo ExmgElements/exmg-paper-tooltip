@@ -158,13 +158,13 @@ Custom property | Description | Default
        * of the tooltip.
        */
       get target () {
-        var parentNode = Polymer.dom(this).parentNode;
+        var parentNode = this.parentNode;
         // If the parentNode is a document fragment, then we need to use the host.
-        var ownerRoot = Polymer.dom(this).getOwnerRoot();
+        var ownerRoot = parentNode.getRootNode();
 
         var target;
         if (this.for) {
-          target = Polymer.dom(ownerRoot).querySelector('#' + this.for);
+          target = ownerRoot.querySelector('#' + this.for);
         } else {
           target = parentNode.nodeType == Node.DOCUMENT_FRAGMENT_NODE ?
               ownerRoot.host : parentNode;
