@@ -7,6 +7,8 @@ WARNING: This element is not compatible with Polymer 1.0
 animations have been stripped and replaced by a simply css animation + we
 have rewritten it to Polymer 2.0 syntax.
 
+Please visit the [API Documentation and demo](http://ExmgElements.github.io/exmg-paper-tooltip/) page for more information.
+
 ## Install
 
 Install the component using bower
