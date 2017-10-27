@@ -2,7 +2,7 @@
   "name": "exmg-paper-tooltip",
   "description": "Simplified version of the paper-tooltip",
   "main": "exmg-paper-tooltip.html",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "authors": [
     "Ex Machina Group"
   ],
