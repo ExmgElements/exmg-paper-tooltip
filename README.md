@@ -14,7 +14,7 @@ Please visit the [API Documentation and demo](http://ExmgElements.github.io/exmg
 Install the component using bower
 
 ```
-$ bower install --save exmg-paper-tooltip
+$ bower install --save ExmgElements/exmg-paper-tooltip
 ```
 
 ## Development
