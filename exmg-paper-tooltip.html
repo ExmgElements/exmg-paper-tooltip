@@ -54,7 +54,9 @@
    * @demo demo/index.html
    */
   class TooltipElement extends Polymer.Element {
-    static get is() { return 'exmg-paper-tooltip'; }
+    static get is() {
+      return 'exmg-paper-tooltip';
+    }
     static get properties() {
       return {
         /**
@@ -146,7 +148,7 @@
      * either the element given by the `for` attribute, or the immediate parent
      * of the tooltip.
      */
-    get target () {
+    get target() {
       var parentNode = this.parentNode;
       // If the parentNode is a document fragment, then we need to use the host.
       var ownerRoot = parentNode.getRootNode();
@@ -156,7 +158,7 @@
         target = ownerRoot.querySelector('#' + this.for);
       } else {
         target = parentNode.nodeType == Node.DOCUMENT_FRAGMENT_NODE ?
-            ownerRoot.host : parentNode;
+          ownerRoot.host : parentNode;
       }
 
       return target;
@@ -182,10 +184,11 @@
 
     show() {
       // If the tooltip is already showing, there's nothing to do.
-      if (this._showing)
+      if (this._showing) {
         return;
+      }
 
-      if (Polymer.dom(this).textContent.trim() === ''){
+      if (Polymer.dom(this).textContent.trim() === '') {
         // Check if effective children are also empty
         var allChildrenEmpty = true;
         var effectiveChildren = Polymer.dom(this).getEffectiveChildNodes();
@@ -235,8 +238,9 @@
     }
 
     updatePosition() {
-      if (!this._target || !this.offsetParent)
+      if (!this._target || !this.offsetParent) {
         return;
+      }
 
       var offset = this.offset;
       var parentRect = this.offsetParent.getBoundingClientRect();
