@@ -2,6 +2,7 @@
   "name": "exmg-paper-tooltip",
   "private": true,
   "description": "Material design style cards",
+  "version": "1.0.3",
   "main": "exmg-paper-tooltip.html",
   "repository": "ExmgElements/exmg-paper-tooltip",
   "keywords": [
