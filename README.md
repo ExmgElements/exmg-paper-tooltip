@@ -9,14 +9,6 @@ have rewritten it to Polymer 2.0 syntax.
 
 Please visit the [API Documentation and demo](http://ExmgElements.github.io/exmg-paper-tooltip/) page for more information.
 
-## Install
-
-Install the component using bower
-
-```
-$ bower install --save ExmgElements/exmg-paper-tooltip
-```
-
 ## Development
 
 First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run polymer server to launch the demo page.

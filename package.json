@@ -1,30 +1,42 @@
 {
   "name": "exmg-paper-tooltip",
-  "private": true,
-  "description": "Material design style cards",
-  "version": "1.0.3",
-  "main": "exmg-paper-tooltip.html",
-  "repository": "ExmgElements/exmg-paper-tooltip",
-  "keywords": [
-    "Exmg",
-    "ExmgElements",
-    "exmg-paper-tooltip",
-    "web-components",
-    "web-component",
-    "polymer"
+  "flat": true,
+  "version": "3.0.0",
+  "description": "Simplified version of the paper-tooltip",
+  "contributors": [
+    "Ex Machina Group"
   ],
-  "author": "Ex Machina",
-  "devDependencies": {
-    "bower": "latest",
-    "eslint": "^4.11.0",
-    "eslint-config-exmg": "latest",
-    "eslint-plugin-html": "^3.0.0",
-    "polymer-cli": "^1.2.0"
+  "keywords": [
+    "web-components",
+    "polymer",
+    "tooltip"
+  ],
+  "main": "exmg-paper-tooltip.html",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:ExmgElements/exmg-paper-tooltip.git"
   },
-  "homepage": "https://github.com/ExmgElements/",
+  "homepage": "https://github.com/ExmgElements/exmg-paper-tooltip",
+  "dependencies": {
+    "@polymer/iron-component-page": "^3.0.0-pre.19",
+    "@polymer/polymer": "^3.0.0-pre.13"
+  },
+  "devDependencies": {
+    "@polymer/iron-demo-helpers": "^3.0.0-pre.12",
+    "@webcomponents/webcomponentsjs": "^2.0.0-beta.2",
+    "eslint-config-exmg": "latest",
+    "wct-browser-legacy": "^1.0.0"
+  },
+  "resolutions": {
+    "@webcomponents/webcomponentsjs": "2.0.0",
+    "type-detect": "1.0.0",
+    "supports-color": "3.1.2",
+    "inherits": "2.0.3",
+    "samsam": "1.1.2"
+  },
   "scripts": {
-    "lint": "polymer lint --rules polymer-2 --input *.html",
+    "lint": "polymer lint --rules polymer-3 --input *.js",
     "eslint": "eslint . --ext js,html --ignore-path .gitignore",
-    "analyze": "polymer analyze --input exmg-paper-tooltip.html > analysis.json"
+    "analyze": "polymer analyze --input exmg-paper-tooltip.js  > analysis.json"
   }
 }
