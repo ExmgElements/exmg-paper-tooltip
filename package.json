@@ -1,5 +1,5 @@
 {
-  "name": "exmg-paper-tooltip",
+  "name": "@exmg/exmg-paper-tooltip",
   "flat": true,
   "version": "3.0.0",
   "description": "Simplified version of the paper-tooltip",
