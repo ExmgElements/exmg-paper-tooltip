@@ -11,38 +11,34 @@
     <script type="module" src="../node_modules/@polymer/iron-demo-helpers/demo-pages-shared-styles.js"></script>
     <script type="module" src="../node_modules/@polymer/iron-demo-helpers/demo-snippet.js"></script>
     <script type="module" src="../exmg-paper-tooltip.js"></script>
-
-    <script>
-      const $_documentContainer = document.createElement('template');
-      $_documentContainer.innerHTML = `<custom-style>
-        <style is="custom-style" include="demo-pages-shared-styles">
-          input, .avatar {
-            margin: 0 10px;
-          }
-          .avatar {
-            box-sizing: border-box;
-            width: 40px;
-            height: 40px;
-            padding: 8px;
-            border-radius: 50%;
-            cursor: pointer;
-          }
-          .blue {
-            background-color: blue;
-          }
-          .orange {
-            background-color: orange;
-          }
-          .green {
-            background-color: green;
-          }
-          .red {
-            background-color: red;
-          }
-        </style>
-      </custom-style>`
-      document.head.appendChild($_documentContainer.content);
-      </script>
+    
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles">
+        input, .avatar {
+          margin: 0 10px;
+        }
+        .avatar {
+          box-sizing: border-box;
+          width: 40px;
+          height: 40px;
+          padding: 8px;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+        .blue {
+          background-color: blue;
+        }
+        .orange {
+          background-color: orange;
+        }
+        .green {
+          background-color: green;
+        }
+        .red {
+          background-color: red;
+        }
+      </style>
+    </custom-style>
   </head>
   <body>
     <div class="vertical-section-container centered">

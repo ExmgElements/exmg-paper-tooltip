@@ -189,7 +189,6 @@ class TooltipElement extends PolymerElement {
     if (this._showing) {
       return;
     }
-   // debugger;
     if (this.textContent.trim() === '') {
       // Check if effective children are also empty
       var allChildrenEmpty = true;
